@@ -18,9 +18,6 @@ jobs:
         npm run docs:build
         
     - name: Deploy Build Files
-      env:
-        # You should enroll ACEESS_TOKEN to repository's secret
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} 
       run: |
         cd .vuepress/dist
         git config --global user.email "rudgns517@naver.com"
@@ -28,4 +25,4 @@ jobs:
         git init
         git add -A
         git commit -m 'deploy with vuepress'
-        git push -f https://${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git main:gh-pages
+        git push -f https://${{ github.actor }}:${{ github.token }}@github.com/${{ github.repository }} HEAD:gh-pages
