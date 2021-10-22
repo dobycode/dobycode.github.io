@@ -2047,6 +2047,13 @@
     "neo-async" "^2.6.1"
     "schema-utils" "^1.0.0"
 
+"cache@^2.3.1":
+  "integrity" "sha512-FR/0U9GMDAq4ERSom2ThoiXz89BlhCSftDOBUgFSBTw0Kh+zBXbDan/DMzh2pP3lDqmOatruG0NqUkeXQqaNKQ=="
+  "resolved" "https://registry.npmjs.org/cache/-/cache-2.3.1.tgz"
+  "version" "2.3.1"
+  dependencies:
+    "ds" "^1.4.2"
+
 "cacheable-request@^6.0.0":
   "integrity" "sha512-Oj3cAGPCqOZX7Rz64Uny2GYAZNliQSqfbePrgAQ1wKAihYmCUnraBtJtKcGR4xz7wF+LoJC+ssFZvv5BgF9Igg=="
   "resolved" "https://registry.npmjs.org/cacheable-request/-/cacheable-request-6.1.0.tgz"
@@ -3098,6 +3105,11 @@
   "version" "5.3.0"
   dependencies:
     "is-obj" "^2.0.0"
+
+"ds@^1.4.2":
+  "integrity" "sha1-CFeqITeQpPs6uzZbnOwOm6hWk5M="
+  "resolved" "https://registry.npmjs.org/ds/-/ds-1.4.2.tgz"
+  "version" "1.4.2"
 
 "duplexer3@^0.1.4":
   "integrity" "sha1-7gHdHKwO08vH/b6jfcCo8c4ALOI="
